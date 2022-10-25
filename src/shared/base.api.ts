@@ -19,7 +19,6 @@ const getMovieForTitle = async (title: string): Promise<IMovie> => {
     .catch(err => {
       return err;
     });
-  console.log(movies);
 
   const movie = movies.filter(movieSearch => movieSearch.Title === title);
   if (movie.length < 1) {

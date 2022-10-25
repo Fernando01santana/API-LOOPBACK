@@ -3,6 +3,7 @@ export interface IMovie {
   Year: string;
   imdbID: string;
   Poster: string;
+  type: string;
 }
 
 export interface IMovieDatabase {
